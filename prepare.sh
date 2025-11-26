@@ -24,6 +24,10 @@ export -f add_timestamp
 
   echo "[START] prepare.sh"
 
+  #Download install script
+  curl https://tdrimmelen.github.io/streamcom-installer/install.sh -o install.sh
+  curl https://tdrimmelen.github.io/streamcom-installer/uninstall.sh -o uninstall.sh
+
   # Update and upgrade
   sudo apt-get update -y
   sudo apt-get dist-upgrade -y
