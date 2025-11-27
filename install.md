@@ -23,7 +23,7 @@ curl https://tdrimmelen.github.io/streamcom-installer/prepare.sh -o prepare.sh
 Run the preparation script to configure the system and install dependencies:
 
 ```bash
-bash prepare.sh
+REBOOT_AFTER_PREPARE=1 bash prepare.sh
 ```
 
 This script will:
@@ -35,12 +35,8 @@ This script will:
 - Configure persistent journald logging
 - Generate SSH keys for git access
 - Create timestamped logs in `prepare.log`
+- Reboot after running
 
-**Optional reboot:**
-To automatically reboot after preparation:
-```bash
-REBOOT_AFTER_PREPARE=1 bash prepare.sh
-```
 
 **Note:** The script is idempotent and can be safely re-run multiple times.
 
