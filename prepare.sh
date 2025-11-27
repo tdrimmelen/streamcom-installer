@@ -54,7 +54,7 @@ export -f add_timestamp
   fi
 
   # Install packages (idempotent with apt-get)
-  sudo apt-get install -y git python3-pip python3-systemd \
+  sudo apt-get install -y vim git python3-pip python3-systemd \
     pipewire pipewire-audio pulseaudio-utils libportaudio2 wireguard resolvconf
 
   # Prepare the system for auto start

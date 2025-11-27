@@ -13,10 +13,11 @@ This guide provides step-by-step instructions for installing the StreamCom beltp
 
 ### 1. System Preparation
 
-Copy the following files to the PI. Run from Powershell (Win):
+Copy the following files to the PI. Run on the raspberry pi:
 
-```bash
-scp install.sh prepare.sh pi@<pi ip address>
+```
+
+curl https://tdrimmelen.github.io/streamcom-installer/prepare.sh -o prepare.sh
 ```
 
 Run the preparation script to configure the system and install dependencies:
