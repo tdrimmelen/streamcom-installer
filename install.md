@@ -49,10 +49,11 @@ After running prepare.sh, add the generated SSH public key to your GitHub accoun
    cat ~/.ssh/id_rsa.pub
    ```
 
-2. Add this key to your GitHub account:
-   - Go to GitHub Settings → SSH and GPG keys
-   - Click "New SSH key"
-   - Paste the public key and save
+2. Add this key as a Deploy key on GitHub:
+   - Go to the target repository on GitHub → Settings → Deploy keys
+   - Click "Add deploy key"
+   - Name it (e.g., bp0001), paste the public key, and let "Allow write access" disabled
+   - Click "Add key"
 
 ### 3. Software Installation
 
